@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".settings">
+
+    <Button
+        android:id="@+id/deleteBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="Delete option"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/deleteSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:accessibilityTraversalBefore="@+id/deleteBtn"
+        android:autofillHints="Option to delete" />
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="Save settings"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <Switch
+        android:id="@+id/freqSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_weight="1"
+        android:outlineSpotShadowColor="@color/colorPrimaryDark"
+        android:text="Custom frequencies"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textOff="Custom frequencing OFF"
+        android:textOn="Custom frequencing ON"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:thumbTint="@color/colorPrimary"
+        android:trackTint="@color/colorPrimary" />
+
+    <ListView
+        android:id="@+id/customizablesList"
+        android:layout_width="match_parent"
+        android:layout_height="610dp" />
+
+</LinearLayout>
